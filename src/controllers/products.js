@@ -6,10 +6,7 @@ const productsController = async () => {
   if (allProducts.length === 0) {
     // populate data
     try {
-      // const products = await axios.get(`${process.env.PRODUCT_DATA_URL}`);
-      const { data } = await axios.get(
-        "https://5gj1qvkc5h.execute-api.us-east-1.amazonaws.com/dev/inventory"
-      );
+      const { data } = await axios.get(`${process.env.PRODUCT_DATA_URL}`);
       const productsCreated = await db.Products.bulkCreate(
         data.inventory.map((eachProduct) => {
           const {

@@ -1,0 +1,23 @@
+{
+  "development": {
+    "username": "grocery-app-admin",
+    "password": "password",
+    "database": "grocery-app",
+    "host": "127.0.0.1",
+    "dialect": "postgres"
+  },
+  "test": {
+    "username": "grocery-app-admin",
+    "password": "password",
+    "database": "grocery-app",
+    "host": "127.0.0.1",
+    "dialect": "postgres"
+  },
+  "production": {
+    "username": "grocery-app-admin",
+    "password": "password",
+    "database": "grocery-app",
+    "host": "127.0.0.1",
+    "dialect": "postgres"
+  }
+}

@@ -2,7 +2,9 @@ import db from "../../models/index.js";
 import axios from "axios";
 
 const productsController = async () => {
-  const allProducts = await db.Products.findAll();
+  const allProducts = await db.Products.findAll({
+    order: [["availableQuantity", "DESC"]],
+  });
   if (allProducts.length === 0) {
     // populate data
     try {
@@ -29,6 +31,9 @@ const productsController = async () => {
           };
         })
       );
+      const allProducts = await db.Products.findAll({
+        order: [["availableQuantity", "DESC"]],
+      });
       return productsCreated;
     } catch {
       throw new Error("Product API failed");

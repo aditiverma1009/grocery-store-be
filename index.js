@@ -1,6 +1,6 @@
-import express from 'express';
-import dotenv from 'dotenv';
-import router from './src/routes/index.js';
+import express from "express";
+import dotenv from "dotenv";
+import router from "./src/routes/index.js";
 
 const app = express();
 
@@ -9,7 +9,7 @@ const port = process.env.PORT;
 
 app.listen(port, () => {
   // eslint-disable-next-line no-console
-  console.log('Listening on port', port);
+  console.log("Listening on port", port);
 });
 
 router(app);

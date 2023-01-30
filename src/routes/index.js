@@ -1,4 +1,5 @@
 import healthCheckRouter from "./healthcheck.js";
+import productsRouter from "./products.js";
 
 const router = (app) => {
   // common middleware time logger
@@ -7,6 +8,7 @@ const router = (app) => {
   });
 
   app.use(healthCheckRouter);
+  app.use(productsRouter);
 };
 
 export default router;

@@ -1,26 +1,23 @@
 {
   "development": {
-    "username": "book_owner",
-    "password": "password",
-    "database": "bookdb",
+    "username": "aditi_verma",
+    "password": null,
+    "database": "grocery-app",
     "host": "127.0.0.1",
-    "port": "5431",
     "dialect": "postgres"
   },
   "test": {
-    "username": "book_owner",
-    "password": "password",
-    "database": "bookdb",
+    "username": "aditi_verma",
+    "password": null,
+    "database": "grocery-app-test",
     "host": "127.0.0.1",
-    "port": "5431",
     "dialect": "postgres"
   },
   "production": {
-    "username": "book_owner",
-    "password": "password",
-    "database": "bookdb",
+    "username": "aditi_verma",
+    "password": null,
+    "database": "grocery-app-production",
     "host": "127.0.0.1",
-    "port": "5431",
     "dialect": "postgres"
   }
 }
